@@ -67,7 +67,7 @@
     "zx-markdown-editor": "^0.0.1",
     "zx-player": "^1.0.0",
     "zx-quill": "^0.0.1",
-    "zx-templates": "^0.0.7",
+    "zx-templates": "^0.0.26",
     "zx-verify": "^0.0.1"
   },
   "devDependencies": {
