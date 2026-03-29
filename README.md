@@ -1,8 +1,93 @@
-## 演示地址
+# 🎨 fork-vue-admin-beautiful - Vue后台管理系统
 
-#### - [演示地址 1： vue-admin-beautiful （横向纵向布局无缝切换）](http://beautiful.panm.cn/vue-admin-beautiful)
+![Vue](https://img.shields.io/badge/Vue-2.x-brightgreen?logo=vue.js)
+![Element UI](https://img.shields.io/badge/Element%20UI-2.x-409eff)
+![License](https://img.shields.io/badge/License-Commercial-red)
 
-#### - [国内备份地址： vue-admin-beautiful](https://chu1204505056.gitee.io/vue-admin-beautiful)
+## 📖 项目简介
+
+fork-vue-admin-beautiful是基于Vue2和Element UI的后台管理系统模板,提供横向/纵向布局切换、表单设计器、数据可视化等功能。
+
+## 📦 项目来源
+
+- **原项目**: [chuzhixin/vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful)
+- **原作者**: chuzhixin
+- **开源协议**: 商业许可证(非开源)
+- **Fork时间**: 2024年
+
+## 🔧 二次开发内容
+
+本项目为原项目的学习研究版本,主要用于:
+- 学习Vue后台管理系统的架构设计
+- 研究组件库的封装和复用
+- 了解前端权限管理的实现方法
+
+## ⚠️ 许可证说明
+
+本项目原项目为商业项目,仅供学习参考,请勿用于商业用途。如需商业使用,请联系原作者获取授权。
+
+## 📊 系统架构
+
+```mermaid
+flowchart TB
+    subgraph Frontend["🖥️ 前端应用"]
+        Vue["Vue 2.x<br/>核心框架"]
+        Element["Element UI<br/>组件库"]
+        Router["Vue Router<br/>路由管理"]
+        Vuex["Vuex<br/>状态管理"]
+    end
+    
+    subgraph Layouts["🎨 布局系统"]
+        Horizontal["横向布局"]
+        Vertical["纵向布局"]
+        Switch["布局切换"]
+    end
+    
+    subgraph Components["📦 功能组件"]
+        Table["表格组件<br/>数据展示"]
+        Form["表单组件<br/>数据录入"]
+        Chart["图表组件<br/>数据可视化"]
+        FormDesigner["表单设计器<br/>可视化设计"]
+    end
+    
+    subgraph Tools["🛠️ 工具集"]
+        Axios["Axios<br/>HTTP请求"]
+        Mock["Mock.js<br/>数据模拟"]
+        Utils["工具函数库"]
+    end
+    
+    subgraph Build["⚙️ 构建工具"]
+        Webpack["Webpack<br/>打包构建"]
+        Babel["Babel<br/>代码转换"]
+        ESLint["ESLint<br/>代码规范"]
+    end
+    
+    Frontend --> Layouts
+    Frontend --> Components
+    Frontend --> Tools
+    Frontend --> Build
+    
+    Vue --> Element
+    Vue --> Router
+    Vue --> Vuex
+    
+    Layouts --> Horizontal
+    Layouts --> Vertical
+    Layouts --> Switch
+    
+    classDef frontStyle fill:#42b883,stroke:#35495e,stroke-width:2px,color:#fff
+    classDef layoutStyle fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef compStyle fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef toolStyle fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef buildStyle fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    
+    class Vue,Element,Router,Vuex frontStyle
+    class Horizontal,Vertical,Switch layoutStyle
+    class Table,Form,Chart,FormDesigner compStyle
+    class Axios,Mock,Utils toolStyle
+    class Webpack,Babel,ESLint buildStyle
+```
+
 
 #### - [演示地址 2： vue-admin-clever （常规后台管理布局）](http://beautiful.panm.cn/vue-admin-clever)
 
