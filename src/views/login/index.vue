@@ -140,7 +140,7 @@ export default {
   mounted() {
     //项目上线时记得去掉
     this.loginForm.userName = "admin";
-    this.loginForm.password = "123456";
+    this.loginForm.password = "${DEMO_PASSWORD}";
   },
   methods: {
     showPwd() {

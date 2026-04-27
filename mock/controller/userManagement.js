@@ -3,7 +3,7 @@ const List = [
   {
     id: "@id",
     userName: "admin",
-    password: "admin",
+    password: "***MOCK***",
     email: "@email",
     permissions: ["admin"],
     datatime: "@datetime",
@@ -11,7 +11,7 @@ const List = [
   {
     id: "@id",
     userName: "editor",
-    password: "editor",
+    password: "***MOCK***",
     email: "@email",
     permissions: ["editor"],
     datatime: "@datetime",
@@ -19,7 +19,7 @@ const List = [
   {
     id: "@id",
     userName: "test",
-    password: "test",
+    password: "***MOCK***",
     email: "@email",
     permissions: ["admin", "editor"],
     datatime: "@datetime",

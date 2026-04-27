@@ -44,7 +44,7 @@ export default {
   data() {
     return {
       form: {
-        password: "123456",
+        password: "${DEMO_PAYMENT_PASSWORD}",
       },
       rules: {
         password: [
